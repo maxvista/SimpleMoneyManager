@@ -1,10 +1,10 @@
 void new_ins(void) {
   #ifdef _WIN32
-    system("Start monman.exe");
+    system("Start smm.exe");
   #elif __linux__
-    system("sh monman");
+    system("sh smm");
   #elif __unix__
-    system("sh monman");
+    system("sh smm");
   #else
     printf("Failed to launch new new instance.\n");
     printf("Reason: Unidentified Operating System.\n");
